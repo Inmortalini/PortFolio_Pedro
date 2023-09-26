@@ -1,0 +1,21 @@
+:root {
+  --color-primario: #0064ff; /* Azul principal */
+  --color-secundario: #212b36; /* Gris oscuro (fondo) */
+  --color-terciario: #ffffff; /* Blanco (texto) */
+  --color-acento: #ff9900; /* Naranja (resaltado) */
+  --color-enlace: #0064ff; /* Azul para enlaces */
+}
+body {
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+}
+/* Estilo para enlaces no visitados en el menú de navegación */
+nav ul li a {
+  color: var(--color-terciario); /* Blanco */
+  text-decoration: none; /* Elimina la subrayado por defecto */
+}
+
+/* Estilo para enlaces visitados en el menú de navegación */
+nav ul li a:visited {
+  color: var(--color-enlace); /* Azul para enlaces visitados */
+}
