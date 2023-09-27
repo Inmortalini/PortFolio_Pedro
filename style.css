@@ -1,6 +1,7 @@
 :root {
   --color-primario: #0064ff; /* Azul principal */
   --color-secundario: #212b36; /* Gris oscuro (fondo) */
+  --color-border: #38526c;
   --color-terciario: #ffffff; /* Blanco (texto) */
   --color-acento: #ff9900; /* Naranja (resaltado) */
   --color-enlace: #0064ff; /* Azul para enlaces */
@@ -9,13 +10,31 @@ body {
   background-color: var(--color-secundario);
   color: var(--color-terciario);
 }
-/* Estilo para enlaces no visitados en el menú de navegación */
-nav ul li a {
-  color: var(--color-terciario); /* Blanco */
-  text-decoration: none; /* Elimina la subrayado por defecto */
+a {
+  color: var(--color-terciario);
+}
+#navBar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-terciario);
 }
 
-/* Estilo para enlaces visitados en el menú de navegación */
-nav ul li a:visited {
-  color: var(--color-enlace); /* Azul para enlaces visitados */
+#navBar a {
+  text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+  border: 1px solid transparent; /* Borde casi invisible */
+  padding: 5px 10px; /* Espacio interior alrededor del enlace */
+  color: #38526c;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: color 0.3s;
+  padding: 1rem 5rem;
+}
+
+#navBar a:hover {
+  color: var(--color-acento); /* Cambia el color del borde en hover */
 }
