@@ -25,7 +25,10 @@ body {
   padding: 1rem 2rem;
   background-color: var(--color-terciario);
 }
-
+/*Close Button invisible para grandes */
+#closeBurger {
+  display: none;
+}
 /* Estilos para el logotipo y los enlaces del menú */
 .commonNavBar {
   color: var(--color-border);
@@ -135,16 +138,47 @@ a:hover {
 
   .menu.active {
     display: block;
-  }
-  .menu {
-    display: none;
     background-color: var(--color-terciario);
-    margin: 0 auto;
+    float: right;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .menu.active ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu.active li {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .menu.active a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color-secundario);
+    transition: background-color 0.3s;
+  }
+
+  .menu.active a:hover {
+    background-color: var(--color-acento);
+    color: var(--color-primario); /* Cambia el color del texto en hover */
+  }
+  #closeBurger {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
   }
   #navBar {
     display: none;
   }
   #burgerMenuForSmallSize {
     display: block;
+  }
+  #socials {
+    display: none;
   }
 }
