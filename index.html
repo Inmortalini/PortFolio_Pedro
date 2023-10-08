@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
     <title>Pedro Barrientos-Portfolio</title>
   </head>
   <body>
@@ -22,13 +23,27 @@
       </div>
       <div class="spacer"></div>
       <!-- Espacio en blanco en el medio -->
+      <img
+        id="burgerMenuForSmallSize"
+        src="/imagenes/burgerMenu.webp"
+        alt="burgerMenu"
+      />
       <nav id="navBar" class="commonNavBar">
-        <a href="about.html">About me</a>
+        <a href="./about/about.html">About me</a>
         <a href="projects.html">Projects</a>
         <a href="skills.html">Skills</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="./about/about.html">About me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
     <div id="mainSection">
       <nav id="socials">
         <a href="">
@@ -41,16 +56,21 @@
 
         <a href="">
           <img
-            src="./imagenes/facebook.svg"
+            src="/imagenes/facebook.svg"
             alt="facebook"
             srcset=""
             class="socialComun"
         /></a>
 
-        <a> <img src="./imagenes/instagram.svg" alt="" /></a>
+        <a href="">
+          <img
+            src="/imagenes/instagram.svg"
+            alt="instagram"
+            class="socialComun"
+        /></a>
         <a href=""
           ><img
-            src="./imagenes/x-twitter.svg"
+            src="/imagenes/x-twitter.svg"
             alt="x-twitter"
             class="socialComun"
         /></a>

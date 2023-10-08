@@ -1,0 +1,68 @@
+:root {
+  --color-primario: #0064ff; /* Azul principal */
+  --color-secundario: #212b36; /* Gris oscuro (fondo) */
+  --color-border: #38526c;
+  --color-terciario: #ffffff; /* Blanco (texto) */
+  --color-acento: #ff9900; /* Naranja (resaltado) */
+  --color-enlace: #0064ff;
+}
+.container {
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+.content {
+  flex: 2;
+  max-width: 70%;
+  margin: 0 200px;
+  text-align: justify; /* Ocupa dos tercios del espacio disponible */
+}
+
+#pedroWithAbook {
+  flex: 1;
+  max-height: 200px;
+  max-width: 70%; /* Ocupa un tercio del espacio disponible */
+}
+.coolWords {
+  color: var(--color-acento);
+}
+#contactButton {
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 15px 30px; /* Ajusta el tamaño del botón según tus preferencias */
+  background-color: var(--color-enlace); /* Color de fondo del botón */
+  color: var(--color-terciario); /* Color del texto */
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+}
+#picAndSkills {
+  margin: 0 200px;
+}
+#skills {
+  display: flex;
+  justify-content: space-around; /* Distribuir cuadraditos uniformemente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.skill {
+  width: 100px; /* Ancho de cada cuadradito */
+  height: 100px; /* Altura de cada cuadradito */
+  background-color: var(--color-border); /* Color de fondo del cuadradito */
+  color: #fff; /* Color del texto en el cuadradito */
+  text-align: center; /* Centrar el texto horizontalmente */
+  line-height: 100px; /* Centrar el texto verticalmente */
+  border-radius: 5px; /* Bordes redondeados */
+  margin: 10px; /* Espacio entre cuadraditos */
+}
+/* Estilos para teléfonos móviles (ancho de pantalla <= 768px) */
+
+@media (max-width: 768px) {
+  body {
+    background-color: var(--color-primario);
+  }
+}
