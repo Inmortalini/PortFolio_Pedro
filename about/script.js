@@ -1,7 +1,7 @@
 
 // Toggle de NavItems on small Screens
 const burgerMenuToggle = document.getElementById("burgerMenuForSmallSize");
-const close = document.getElementById("closeBurger");
+const close = document.getElementById("closeBurger");   
 const menu = document.querySelector(".menu");
 
 // Agrega un evento de clic al botón de hamburguesa

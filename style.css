@@ -76,24 +76,24 @@ a:hover {
 }
 /* Estilos para el espacio en blanco en el medio del NavBAr*/
 .spacer {
-  flex-grow: 1; /* Ocupa el espacio restante en el medio */
+  flex-grow: 1; 
 }
 /* Centro de informacion */
 
 #mainSection {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Espacio entre los elementos internos */
-  height: 100vh; /* Toma el 100% de la altura del viewport */
-  padding: 0 0.5rem; /* Agrega espaciado a los lados del contenido */
+  justify-content: space-between; 
+  height: 100vh;
+  padding: 0 0.5rem; 
 }
 #socials {
   background-color: var(--color-acento);
   height: auto;
   width: 3.5rem;
-  /*position: fixed; /* Añade esta propiedad */
-  left: 0.5rem; /* Posición en el borde izquierdo */
-  top: 50%; /* Centrado verticalmente en la mitad de la pantalla */
+  position: fixed;
+  left: 0.5rem;
+  top: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,8 +117,8 @@ a:hover {
 
 .customButton {
   background-color: var(--color-acento);
-  color: #fff; /* Cambia el color del texto del botón */
-  padding: 10px 20px; /* Ajusta el espacio interior del botón según tus preferencias */
+  color: var(--color-terciario);
+  padding: 10px 20px;
   border: solid;
   border-radius: 5px;
   font-size: 1rem;
@@ -143,6 +143,8 @@ a:hover {
     margin-top: 0;
     padding: 0;
     width: 100%;
+    position: fixed;
+    transition: top 0.3s ease;
   }
 
   .menu.active ul {
@@ -150,7 +152,23 @@ a:hover {
     list-style: none;
   }
 
-  .menu.active li {
+  .menu.active li:not(:last-child) {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-bottom: 10px; /* Mantén el margen entre todos los elementos excepto el último cuando el menú está activo */
+    background: linear-gradient(
+      to right,
+      transparent 15%,
+      var(--color-secundario) 50%,
+      transparent 85%
+    ); /* Línea personalizada para todos los elementos excepto el último */
+    background-size: 100% 1px; /* Grosor de la línea */
+    background-repeat: no-repeat;
+    background-position: 0 100%; /* Inicio de la línea en el centro */
+  }
+  .menu.active li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
     text-align: center;
     margin-bottom: 10px;
   }
@@ -160,7 +178,6 @@ a:hover {
     padding: 10px;
     text-decoration: none;
     color: var(--color-secundario);
-    transition: background-color 0.3s;
   }
 
   .menu.active a:hover {

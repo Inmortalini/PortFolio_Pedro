@@ -6,30 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/about/styleAbout.css" />
-    <script src="./script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+
     <title>Pedro Barrientos-Portfolio</title>
   </head>
   <body>
     <div id="navBarContainer">
       <div id="logoContainer" class="commonNavBar">
         🔙 🏠
-        <a href="/index.html">Back HOME</a>
+        <a id="backHome" href="/index.html">Back HOME</a>
       </div>
       <div class="spacer"></div>
       <!-- Espacio en blanco en el medio -->
+      <img
+        id="burgerMenuForSmallSize"
+        src="/imagenes/burgerMenu.webp"
+        alt="burgerMenu"
+      />
+      <img src="/imagenes/close.png" alt="closeBurger" id="closeBurger" />
       <nav id="navBar" class="commonNavBar">
-        <a href="about.html">About me</a>
+        <a href="./about/about.html">About me</a>
         <a href="projects.html">Projects</a>
         <a href="skills.html">Skills</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="/about/about.html">About me</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/skills.html">Skills</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
     <div id="mainSection">
       <nav id="socials">
         <a href="">
@@ -98,23 +115,24 @@
               hesitate to <strong class="coolWords">contact</strong> me.
             </p>
             <button id="contactButton">Contact me</button>
+            <div id="picAndSkills">
+              <img
+                id="pedroWithAbook"
+                src="/imagenes/pedroWithAbook-.png"
+                alt="pedroWithAbook"
+              />
+              <h2>SKILLS</h2>
+              <span id="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+              </span>
+            </div>
           </span>
-          <div id="picAndSkills">
-            <img
-              id="pedroWithAbook"
-              src="/imagenes/pedroWithAbook-.png"
-              alt="pedroWithAbook"
-            />
-            <h2>SKILLS</h2>
-            <span id="skills">
-              <div class="skill">HTML</div>
-              <div class="skill">CSS</div>
-              <div class="skill">JavaScript</div>
-              <div class="skill">React</div>
-            </span>
-          </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="/about/script.js"></script>
 </html>

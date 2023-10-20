@@ -6,10 +6,11 @@
   --color-acento: #ff9900; /* Naranja (resaltado) */
   --color-enlace: #0064ff;
 }
-.container {
-  display: flex;
-  align-items: center;
-  /* Centra verticalmente los elementos dentro del contenedor */
+#backHome {
+  z-index: 2;
+}
+#centerContent {
+  margin-top: 200px; /* Ajusta la cantidad de espacio según tus necesidades */
 }
 
 .content {
@@ -19,11 +20,6 @@
   text-align: justify; /* Ocupa dos tercios del espacio disponible */
 }
 
-#pedroWithAbook {
-  flex: 1;
-  max-height: 200px;
-  max-width: 70%; /* Ocupa un tercio del espacio disponible */
-}
 .coolWords {
   color: var(--color-acento);
 }
@@ -40,29 +36,41 @@
   cursor: pointer;
   transition: background-color 0.3s ease; /* Transición suave de color de fondo */
 }
-#picAndSkills {
-  margin: 0 200px;
-}
+
 #skills {
   display: flex;
-  justify-content: space-around; /* Distribuir cuadraditos uniformemente */
-  align-items: center; /* Centrar verticalmente */
+  justify-content: space-around;
+  align-items: center;
 }
 
 .skill {
-  width: 100px; /* Ancho de cada cuadradito */
-  height: 100px; /* Altura de cada cuadradito */
-  background-color: var(--color-border); /* Color de fondo del cuadradito */
-  color: #fff; /* Color del texto en el cuadradito */
-  text-align: center; /* Centrar el texto horizontalmente */
-  line-height: 100px; /* Centrar el texto verticalmente */
-  border-radius: 5px; /* Bordes redondeados */
-  margin: 10px; /* Espacio entre cuadraditos */
+  width: 100px; /* Ancho fijo */
+  height: 100px; /* Altura fija */
+  background-color: var(--color-border);
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* Media query para pantallas medianas (tabletas) */
+/* Estilos para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
 }
 /* Estilos para teléfonos móviles (ancho de pantalla <= 768px) */
-
 @media (max-width: 768px) {
-  body {
-    background-color: var(--color-primario);
+  #centerContent {
+    margin: 600px 50px 0 50px;
+    width: 1vh;
+  }
+  #pedroWithAbook {
+    max-height: 40vh;
+    max-width: 80%;
+    display: block;
+    margin: 50px auto;
+  }
+  .skill {
+    background-color: var(--color-secundario);
   }
 }
