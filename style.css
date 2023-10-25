@@ -49,6 +49,9 @@ a {
 a:hover {
   color: var(--color-acento);
 }
+.socialA{
+  width: 100%;
+}
 #navBar {
   width: 35%;
   height: 100px;

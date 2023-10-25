@@ -54,6 +54,16 @@
   margin: 10px;
 }
 
+/* Media query para pantallas grandes (laptops y escritorio) */
+@media (min-width: 1025px) {
+  #centerContent {
+    margin: 1600px 50px 0 200px;
+    max-width: 70%;
+    display: block;
+    
+  }
+}
+
 /* Media query para pantallas medianas (tabletas) */
 /* Estilos para pantallas medianas */
 @media (min-width: 769px) and (max-width: 1024px) {
