@@ -10,15 +10,24 @@
     <div id="main">
       <div id="navBarContainer">
         <div id="logoContainer" class="commonNavBar">
-          <a  href="/index.html">BACK HOME </a>
+          <a href="/index.html">BACK HOME </a>
         </div>
         <div id="burgerMenu">
-        <img
-          id="burgerMenuForSmallSize"
-          src="/imagenes/burgerMenu.webp"
-          alt="burgerMenu"
-        />
-    </div>
+          <img
+            id="burgerMenuForSmallSize"
+            src="/imagenes/burgerMenu.webp"
+            alt="burgerMenu"
+          />
+          <img src="/imagenes/close.png" alt="closeBurger" id="closeBurger" />
+        </div>
+        <nav class="menu">
+          <ul id="listBar">
+            <li><a href="/about/about.html" class="itemBar">About me</a></li>
+            <li><a href="/projects.html" class="itemBar">Projects</a></li>
+            <li><a href="/skills.html" class="itemBar">Skills</a></li>
+            <li><a href="/contact.html" class="itemBar">Contact</a></li>
+          </ul>
+        </nav>
       </div>
       <div id="socials">
         <a href="https://www.linkedin.com/in/pedro-barrientos/" id="linkedin">
@@ -56,8 +65,59 @@
       </div>
 
       <div id="centerContent">
-        <h1>About Pedro </h1>
+        <h1>About Pedro</h1>
+        <p>
+          Here you will find more information about me, what I do, and my
+          current skills mostly in terms of programming and technology
+        </p>
+        <div class="container">
+          <span class="content">
+            <h2>Get To know me!</h2>
+            <p>
+              I'm a Frontend Web Developer building the Front-end of Websites
+              and Web Applications that leads to the success of the overall
+              product. Check out some of my work in the Projects section.
+            </p>
+            <p>
+              I also like sharing content related to the stuff that I have
+              learned over the years in
+              <strong class="coolWords">Web Development</strong> so it can help
+              other people of the Dev Community. Feel free to Connect or Follow
+              me on my
+              <a
+                href="https://www.linkedin.com/in/pedro-barrientos/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+              where I post useful content related to Web Development and
+              Programming.
+            </p>
+            <p>
+              I'm open to <strong class="coolWords">Job</strong> opportunities
+              where I can contribute, learn, and grow. If you have a good
+              opportunity that matches my skills and experience then don't
+              hesitate to <strong class="coolWords">contact</strong> me.
+            </p>
+            <button id="contactButton">Contact me</button>
+            <div id="picAndSkills">
+              <img
+                id="pedroWithAbook"
+                src="/imagenes/pedroWithAbook-.png"
+                alt="pedroWithAbook"
+              />
+              <h2>SKILLS</h2>
+              <span id="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+              </span>
+            </div>
+          </span>
+        </div>
       </div>
     </div>
   </body>
+  <script src="/about-grid/Ascripts.js"></script>
 </html>

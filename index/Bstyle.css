@@ -4,7 +4,7 @@
   --color-secundario: #212b36; /* Gris oscuro (fondo) */
   --color-border: #38526c;
   --color-terciario: #ffffff; /* Blanco (texto) */
-  --color-acento: #ff9900; /* Naranja (resaltado) */
+  --color-acento: #f3a735; /* Naranja (resaltado) */
   --color-enlace: #0064ff;
 }
 html {
@@ -14,7 +14,10 @@ html {
   z-index: 2;
 }
 body {
-  background-color: var(--color-secundario);
+ 
+  background-image: url('/imagenes/pexels-karolina-grabowska-4814061.jpg');
+  background-repeat: repeat; /* Repetir la imagen en todo el fondo */
+
   color: var(--color-terciario);
   font-family: "PT Serif", serif;
   margin: 0;
@@ -25,6 +28,7 @@ body {
   display: grid;
   grid-template-rows: 15vh 35vh 25vh 25vh;
   grid-template-columns: 8vw 42vw 25vw 25vw;
+  background-color: rgba(70, 65, 65, 0.6);
 }
 #navBarContainer {
   background-color: var(--color-acento);
@@ -35,6 +39,12 @@ body {
   grid-template-rows: 5vh 5vh 5vh;
   grid-template-columns: 25vw 25vw 50vw;
   position: fixed;
+}
+#logoContainer img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 #socials {
   background-color: var(--color-acento);
@@ -75,13 +85,16 @@ body {
 }
 /*centerContent*/
 #centerContent {
-  grid-row: 2/4;
+  grid-row: 2/5;
   grid-column: 2/5;
   margin-left: 10vw;
   margin-right: 10vw;
   color: var(--color-terciario);
+  margin-top: 20vh;
 }
-
+#pedro{
+  color: var(--color-acento);
+}
 /* Contact Boton*/
 #contactButton {
   display: block;
@@ -95,6 +108,8 @@ body {
   border-radius: 5px; /* Bordes redondeados */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  border: solid;
+  font-size: 20px;
 }
 /* Skills Styles*/
 .skill {
@@ -119,15 +134,23 @@ body {
 /*Media Querry para pantallas pequeñas*/
 @media (max-width: 767px) {
   #logoContainer {
-    grid-row: 2/3;
+    grid-row: 1/2;
     margin-left: 1.5vw;
+    margin-top: 2vh;
+    display: flex;
+    white-space: nowrap;
+  }
+  #logoContainer p{
+    font-size: 1.6rem;
+    color: var(--color-secundario);
+    font-weight: bolder;
   }
   #burgerMenu {
     grid-row: 2/3;
     grid-column: 3/4;
     display: flex;
     justify-content: flex-end;
-    margin-right: 10vw;
+    margin-right: 4vw;
   }
   #burgerMenuForSmallSize {
     max-width: 20%;
@@ -206,15 +229,24 @@ body {
   #burgerMenu {
     display: none;
   }
+
   #logoContainer {
-    grid-row: 2/3;
+    grid-row: 1/2;
     margin-left: 1.5vw;
     margin-top: 2vh;
+    display: flex;
+    white-space: nowrap;
     text-decoration: none;
   }
+  #logoContainer p {
+    font-size: 1.6rem;
+    color: var(--color-secundario);
+    font-weight: bolder;
+}
   .menu {
     visibility: visible;
     grid-row: 2/3;
+    grid-column: 2/4;
     margin-right: 50vw;
   }
   #contactButton {
@@ -225,13 +257,11 @@ body {
   }
   #listBar {
     display: flex;
-   
   }
   .itemBar {
     margin-right: 8vw;
     color: var(--color-border);
     font-size: 1rem;
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
     transition: color 0.3s;
@@ -252,7 +282,7 @@ body {
   }
 }
 /*Media Query para pantallas grandes*/
-@media (min-width: 1199px){
+@media (min-width: 1199px) {
   html {
     font-size: 20px;
   }
@@ -281,7 +311,6 @@ body {
   }
   #listBar {
     display: flex;
-   
   }
   .itemBar {
     margin-right: 12vw;

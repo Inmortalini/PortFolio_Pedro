@@ -13,6 +13,7 @@ body {
   background-color: var(--color-secundario);
   color: var(--color-terciario);
   font-family: "PT Serif", serif;
+  background-image: url('/imagenes/pexels-karolina-grabowska-4814061.jpg');
   margin: 0;
 }
 
@@ -127,9 +128,7 @@ a:hover {
   font-size: 1rem;
   cursor: pointer;
 }
-.menu {
-  display: none;
-}
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -138,7 +137,9 @@ a:hover {
   #navBar {
     display: none;
   }
-
+  .menu {
+    display: none;
+  }
   .menu.active {
     display: block;
     background-color: var(--color-terciario);
