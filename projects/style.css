@@ -1,0 +1,302 @@
+/*Body-Basic-root-HTML  */
+:root {
+  --color-primario: #0064ff; /* Azul principal */
+  --color-secundario: #212b36; /* Gris oscuro (fondo) */
+  --color-border: #38526c;
+  --color-terciario: #ffffff; /* Blanco (texto) */
+  --color-acento: #ff9900; /* Naranja (resaltado) */
+  --color-enlace: #0064ff;
+}
+html {
+  font-size: 16px;
+}
+#backHome {
+  z-index: 2;
+}
+body {
+  background-color: var(--color-secundario);
+  color: var(--color-terciario);
+  font-family: "PT Serif", serif;
+  margin: 0;
+}
+
+/* mainGridTemplate --First Grid here is the skeleton of the page*/
+#main {
+  display: grid;
+  grid-template-rows: 15vh 35vh 25vh 25vh;
+  grid-template-columns: 8vw 42vw 25vw 25vw;
+}
+#navBarContainer {
+  background-color: var(--color-acento);
+  grid-row: 1/2;
+  grid-column: 1/5;
+  z-index: 2;
+  display: grid;
+  grid-template-rows: 5vh 5vh 5vh;
+  grid-template-columns: 25vw 25vw 50vw;
+  position: fixed;
+}
+#socials {
+  background-color: var(--color-acento);
+  position: fixed; /* Cambia la posición a fixed */
+  top: 50%; /* Ajusta la posición vertical al centro */
+  left: 1vw; /* Ajusta la posición horizontal a 1vw desde la izquierda */
+  transform: translateY(-50%); /* Centra verticalmente */
+  display: grid;
+  grid-template-rows: 0.5vh 6vh 6vh 6vh 6vh 0.5vh;
+  grid-template-columns: 8vw;
+}
+
+/*Socials*/
+#socials a img {
+  max-width: 70%;
+  height: auto;
+}
+#linkedin {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+}
+#facebook {
+  background-color: var(--color-enlace);
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+}
+#instagram {
+  grid-row: 4/5;
+  display: flex;
+  justify-content: center;
+}
+#twitter {
+  grid-row: 5/6;
+  display: flex;
+  justify-content: center;
+}
+/*centerContent*/
+#centerContent {
+  grid-row: 2/4;
+  grid-column: 2/5;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  color: var(--color-terciario);
+}
+
+/* Contact Boton*/
+#contactButton {
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 15px 30px; /* Ajusta el tamaño del botón según tus preferencias */
+  background-color: var(--color-enlace); /* Color de fondo del botón */
+  color: var(--color-terciario); /* Color del texto */
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+/* burger Menu*/
+
+/*Media Querry para pantallas pequeñas*/
+@media (max-width: 767px) {
+  #logoContainer {
+    grid-row: 2/3;
+    margin-left: 1.5vw;
+  }
+  #burgerMenu {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10vw;
+  }
+  #burgerMenuForSmallSize {
+    max-width: 20%;
+    height: auto;
+  }
+  #pedroWithAbook {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    display: block;
+    margin: 4vh auto;
+  }
+
+  #closeBurger {
+    max-width: 20%;
+    height: auto;
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .menu.active {
+    display: block;
+    background-color: var(--color-terciario);
+    float: right;
+    margin-top: 15vh;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    transition: top 0.3s ease;
+  }
+
+  .menu.active ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu.active li:not(:last-child) {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-bottom: 10px; /* Mantén el margen entre todos los elementos excepto el último cuando el menú está activo */
+    background: linear-gradient(
+      to right,
+      transparent 15%,
+      var(--color-secundario) 50%,
+      transparent 85%
+    ); /* Línea personalizada para todos los elementos excepto el último */
+    background-size: 100% 1px; /* Grosor de la línea */
+    background-repeat: no-repeat;
+    background-position: 0 100%; /* Inicio de la línea en el centro */
+  }
+  .menu.active li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .menu.active a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color-secundario);
+  }
+
+  .menu.active a:hover {
+    background-color: var(--color-acento);
+    color: var(--color-primario); /* Cambia el color del texto en hover */
+  }
+ 
+  .imagensOfTheProjects {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Media Querry para pantallas medianas*/
+@media (min-width: 767px) and (max-width: 1199px) {
+  #closeBurger {
+    display: none;
+  }
+  #burgerMenu {
+    display: none;
+  }
+  #logoContainer {
+    grid-row: 2/3;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+    text-decoration: none;
+  }
+  .menu {
+    visibility: visible;
+    grid-row: 2/3;
+    margin-right: 50vw;
+  }
+  #contactButton {
+    margin-bottom: 5vh;
+  }
+  ul {
+    list-style: none;
+  }
+  #listBar {
+    display: flex;
+  }
+  .itemBar {
+    margin-right: 8vw;
+    color: var(--color-border);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color 0.3s;
+    display: flex; /* Alinea elementos en una fila */
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .itemBar:hover {
+    color: var(--color-acento);
+  }
+  /*projectsImagen*/
+#imagenOfProjects{
+  display: grid;
+  grid-template-columns: 40vw 40vw ;
+}
+.imagensOfTheProjects {
+  width: 100%;
+  height: auto;
+}
+
+}
+/*Media Query para pantallas grandes*/
+@media (min-width: 1199px) {
+  html {
+    font-size: 20px;
+  }
+  #closeBurger {
+    display: none;
+  }
+  #burgerMenu {
+    display: none;
+  }
+  #logoContainer {
+    grid-row: 2/3;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+    text-decoration: none;
+  }
+  .menu {
+    visibility: visible;
+    grid-row: 2/3;
+    margin-right: 50vw;
+  }
+  #contactButton {
+    margin-bottom: 5vh;
+  }
+  ul {
+    list-style: none;
+  }
+  #listBar {
+    display: flex;
+  }
+  .itemBar {
+    margin-right: 12vw;
+    color: var(--color-border);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color 0.3s;
+    display: flex; /* Alinea elementos en una fila */
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .itemBar:hover {
+    color: var(--color-secundario);
+  }
+
+    /*projectsImagen*/
+#imagenOfProjects{
+  display: grid;
+  grid-template-columns: 40vw 40vw ;
+}
+.imagensOfTheProjects {
+  width: 100%;
+  height: auto;
+}
+}
