@@ -86,6 +86,7 @@ body {
 #contactButton {
   display: block;
   margin: 0 auto; /* Centrar horizontalmente */
+  margin-bottom: 5vh;
   padding: 15px 30px; /* Ajusta el tamaño del botón según tus preferencias */
   background-color: var(--color-enlace); /* Color de fondo del botón */
   color: var(--color-terciario); /* Color del texto */
@@ -95,6 +96,9 @@ body {
   border-radius: 5px; /* Bordes redondeados */
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+#contactButtonref {
+  text-decoration: none;
 }
 /* Skills Styles*/
 .skill {
@@ -275,9 +279,6 @@ body {
     visibility: visible;
     grid-row: 2/3;
     margin-right: 50vw;
-  }
-  #contactButton {
-    margin-bottom: 5vh;
   }
   ul {
     list-style: none;

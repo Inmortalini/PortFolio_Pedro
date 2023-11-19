@@ -99,6 +99,7 @@ body {
   display: block;
   margin: 0 auto; /* Centrar horizontalmente */
   padding: 15px 30px; /* Ajusta el tamaño del botón según tus preferencias */
+  margin-bottom: 5vh;
   background-color: var(--color-enlace); /* Color de fondo del botón */
   color: var(--color-terciario); /* Color del texto */
   text-align: center;
@@ -110,7 +111,7 @@ body {
   border: solid;
   font-size: 20px;
 }
-#contactButtonref{
+#contactButtonref {
   text-decoration: none;
 }
 /* Skills Styles*/
@@ -314,9 +315,6 @@ body {
     grid-row: 2/3;
     margin-right: 50vw;
     margin-left: 10vw;
-  }
-  #contactButton {
-    margin-bottom: 5vh;
   }
   ul {
     list-style: none;
