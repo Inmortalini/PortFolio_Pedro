@@ -15,7 +15,7 @@ html {
 }
 body {
   background-image: url("imagenes/pexels-karolina-grabowska-4814061.jpg");
-  background-repeat: repeat; /* Repetir la imagen en todo el fondo */
+  background-repeat: repeat;
 
   color: var(--color-terciario);
   font-family: "PT Serif", serif;

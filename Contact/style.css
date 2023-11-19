@@ -14,7 +14,8 @@ html {
   text-decoration: none;
 }
 body {
-  background-color: var(--color-secundario);
+  background-image: url("imagenes/pexels-karolina-grabowska-4814061.jpg");
+  background-repeat: repeat;
   color: var(--color-terciario);
   font-family: "PT Serif", serif;
   margin: 0;
@@ -225,7 +226,6 @@ body {
   }
   #listBar {
     display: flex;
-   
   }
   .itemBar {
     margin-right: 8vw;
@@ -252,7 +252,7 @@ body {
   }
 }
 /*Media Query para pantallas grandes*/
-@media (min-width: 1199px){
+@media (min-width: 1199px) {
   html {
     font-size: 20px;
   }
@@ -281,7 +281,6 @@ body {
   }
   #listBar {
     display: flex;
-   
   }
   .itemBar {
     margin-right: 12vw;
