@@ -24,7 +24,7 @@ body {
   display: grid;
   grid-template-rows: 15vh 35vh 25vh 25vh;
   grid-template-columns: 8vw 42vw 25vw 25vw;
-  background-color: rgba(70, 65, 65, 0.6);
+  background-size: 200% 100vh; /* Ajusta el tamaño según tus necesidades */
 }
 #navBarContainer {
   background-color: var(--color-acento);
@@ -122,7 +122,15 @@ body {
 #backHome {
   text-decoration: none;
 }
-/* burger Menu*/
+/* linkedin Link*/
+p a#linkedin2 {
+  color: var(--color-primario);
+  text-decoration: none;
+}
+
+p a#linkedin2:hover {
+  text-decoration: underline;
+}
 
 /*Media Querry para pantallas pequeñas*/
 @media (max-width: 767px) {
@@ -248,7 +256,7 @@ body {
     white-space: nowrap;
   }
   .itemBar:hover {
-    color: var(--color-acento);
+    color: var(--color-enlace);
   }
   #pedroWithAbook {
     width: 50%;
@@ -300,7 +308,7 @@ body {
     white-space: nowrap;
   }
   .itemBar:hover {
-    color: var(--color-secundario);
+    color: var(--color-primario);
   }
   #pedroWithAbook {
     width: 50%;

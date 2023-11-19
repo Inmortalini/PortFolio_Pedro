@@ -27,7 +27,7 @@ body {
   display: grid;
   grid-template-rows: 15vh 35vh 25vh 25vh;
   grid-template-columns: 8vw 42vw 25vw 25vw;
-  background-color: rgba(70, 65, 65, 0.6);
+  
 }
 #navBarContainer {
   background-color: var(--color-acento);

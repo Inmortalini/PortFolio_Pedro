@@ -27,7 +27,7 @@ body {
   display: grid;
   grid-template-rows: 15vh 35vh 25vh 25vh;
   grid-template-columns: 8vw 42vw 25vw 25vw;
-  background-color: rgba(70, 65, 65, 0.6);
+
 }
 #navBarContainer {
   background-color: var(--color-acento);
@@ -245,7 +245,7 @@ body {
     white-space: nowrap;
   }
   .itemBar:hover {
-    color: var(--color-acento);
+    color: var(--color-enlace);
   }
   #pedroWithAbook {
     width: 50%;
@@ -300,7 +300,7 @@ body {
     white-space: nowrap;
   }
   .itemBar:hover {
-    color: var(--color-secundario);
+    color: var(--color-enlace);
   }
   #pedroWithAbook {
     width: 50%;
