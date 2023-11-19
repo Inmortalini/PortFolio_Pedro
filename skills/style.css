@@ -14,7 +14,7 @@ html {
   z-index: 2;
 }
 body {
-  background-image: url("imagenes/pexels-karolina-grabowska-4814061.jpg");
+  background-image: url("../imagenes/pexels-karolina-grabowska-4814061.jpg");
   background-repeat: repeat;
  
   color: var(--color-terciario);

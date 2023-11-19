@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-image: url("imagenes/pexels-karolina-grabowska-4814061.jpg");
+  background-image: url("../imagenes/pexels-karolina-grabowska-4814061.jpg");
   background-repeat: repeat;
   color: var(--color-terciario);
   font-family: "PT Serif", serif;
