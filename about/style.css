@@ -114,6 +114,10 @@ body {
 .skill:last-child {
   margin-bottom: 5vh; /* Ajusta el valor del margen inferior según tus preferencias */
 }
+/*Back Home */
+#backHome {
+  text-decoration: none;
+}
 /* burger Menu*/
 
 /*Media Querry para pantallas pequeñas*/
@@ -225,7 +229,6 @@ body {
   }
   #listBar {
     display: flex;
-   
   }
   .itemBar {
     margin-right: 8vw;
@@ -252,7 +255,7 @@ body {
   }
 }
 /*Media Query para pantallas grandes*/
-@media (min-width: 1199px){
+@media (min-width: 1199px) {
   html {
     font-size: 20px;
   }
@@ -281,7 +284,6 @@ body {
   }
   #listBar {
     display: flex;
-   
   }
   .itemBar {
     margin-right: 12vw;
