@@ -110,6 +110,9 @@ body {
   border: solid;
   font-size: 20px;
 }
+#contactButtonref{
+  text-decoration: none;
+}
 /* Skills Styles*/
 .skill {
   display: block;
