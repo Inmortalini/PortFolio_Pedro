@@ -95,7 +95,6 @@ body {
   border-radius: 5px; /* Bordes redondeados */
   cursor: pointer;
   transition: background-color 0.3s ease;
-  
 }
 /* Skills Styles*/
 .skill {
@@ -115,8 +114,10 @@ body {
 .skill:last-child {
   margin-bottom: 5vh; /* Ajusta el valor del margen inferior según tus preferencias */
 }
-/* burger Menu*/
-
+/* backHome*/
+#backHome {
+  text-decoration: none;
+}
 /*Media Querry para pantallas pequeñas*/
 @media (max-width: 767px) {
   #logoContainer {
@@ -226,7 +227,6 @@ body {
   }
   #listBar {
     display: flex;
-   
   }
   .itemBar {
     margin-right: 8vw;
@@ -253,7 +253,7 @@ body {
   }
 }
 /*Media Query para pantallas grandes*/
-@media (min-width: 1199px){
+@media (min-width: 1199px) {
   html {
     font-size: 20px;
   }
@@ -282,7 +282,6 @@ body {
   }
   #listBar {
     display: flex;
-   
   }
   .itemBar {
     margin-right: 12vw;
