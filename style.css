@@ -223,6 +223,7 @@ body {
     background-color: var(--color-acento);
     color: var(--color-primario); /* Cambia el color del texto en hover */
   }
+
 }
 /* Media Querry para pantallas medianas*/
 @media (min-width: 767px) and (max-width: 1199px) {
@@ -242,7 +243,7 @@ body {
     text-decoration: none;
   }
   #logoContainer p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--color-secundario);
     font-weight: bolder;
   }
